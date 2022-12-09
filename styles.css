@@ -46,16 +46,19 @@ header {
     font-size: 48px;
     font-weight: 800;
 }
-.container-image{
+.container.container-image{
     align-self: stretch;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .image{
-    width: 75%;
-    height: 50%;
+    display: flex;
+    width: 90%;
+    height: 75%;
     background-color: darkseagreen;
     border: 1px;
     border-color: var(--white-color);
+    justify-content: center;
+    align-items: center;
 }
