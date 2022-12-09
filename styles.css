@@ -6,11 +6,13 @@
     --light-blue-color: #3882F6;
 }
 body{
+    margin: 0;
     background-color: var(--dark-color);
     font-family: var(--font-family);
     color: var(--white-color);
 }
 header {
+    padding-top: 15px;
     font-size: 18px;
     display: flex;
     gap: 10px;
@@ -136,7 +138,8 @@ main {
 .square-subtext{
     color: var(--dark-color);
     text-align: center;
-}
+}link one
+
 
 .blue-square-text-header{
     font-size: 18px;
@@ -158,4 +161,10 @@ main {
     border-color: var(--white-color);
     padding: 7.5px;
     border-radius: 10px;
+}
+
+footer{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
 }
