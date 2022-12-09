@@ -16,9 +16,32 @@ header {
     gap: 10px;
     align-items: flex-end;
     justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
-
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.quote{
+    background-color: #e5e7eb;
+    color: var(--dark-color);
+    font-size: 36px;
+    font-style: italic;
+}
+.main-column.quote{
+    background-color: #e5e7eb;
+    color: var(--dark-color);
+    font-size: 36px;
+    font-style: italic;
+}
+.quote-subtext{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--dark-color);
+    align-self: flex-end;
+}
 .header-element, .logo{
     flex-basis: auto;
     gap: 10px;
@@ -29,12 +52,27 @@ header {
     margin-left: 0;
     margin-right: auto;
 }
-
-
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.main , .main-column{
+    padding: 25px;
+}
 .main{
     display: flex;
     justify-content: space-between;
-
+}
+.main-column{
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information-header{
+    color: var(--dark-color);
+    font-weight: 800;
+    font-size: 36px;
 }
 .container{
     flex: 1;
@@ -58,15 +96,66 @@ header {
     display: flex;
     width: 90%;
     height: 75%;
-    background-color: darkseagreen;
+    background-color: #e5e7eb;
     border: 1px;
     border-color: var(--white-color);
     justify-content: center;
     align-items: center;
+    color: var(--dark-color);
 }
 .button{
     font-weight: bold;
     background-color: var(--light-blue-color);
     padding: 10px;
     border-radius: 5px;
+}
+.cards{
+    display: flex;
+    gap: 10px;
+}
+.card{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.information-header{
+    padding: 25px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.square{
+    border-style: solid;
+    width: 75px;
+    height: 75px;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--light-blue-color);
+}
+.square-subtext{
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.blue-square-text-header{
+    font-size: 18px;
+    font-weight: 800;
+}
+.blue-square{
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px;
+    display: flex;
+    background-color: #3882F6;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blue-square-button{
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--white-color);
+    padding: 7.5px;
+    border-radius: 10px;
 }
